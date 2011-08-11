@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>Save/Restore Test Page</title>
+		<script src="saverestore.js"></script>
+		<style>
+			td.name{
+				text-align: right;
+				padding-right: 1em;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Save/Restore Test Page</h1>
+		<p>This is the test page for the <em>Save/Restore</em> scripts.</p>
+		<form>
+			<fieldset>
+				<legend>Enter some values</legend>
+				<table>
+					<tr>
+						<td class="name">Text Fields</td>
+						<td>
+							<input type="text" name="txt" value="" />
+						</td>
+					</tr>
+					<tr>
+						<td class="name">Password Fields</td>
+						<td>
+							<input type="password" name="pass" value="" />
+						</td>
+					</tr>
+					<tr>
+						<td class="name">Checkboxes</td>
+						<td>
+							<input type="checkbox" name="chk1" id="chk1"/><label for="chk1">One</label>  <br>
+							<input type="checkbox" name="chk2" id="chk2"/><label for="chk2">Two</label>  <br>
+							<input type="checkbox" name="chk3" id="chk3"/><label for="chk3">Three</label>
+						</td>
+					</tr>
+					<tr>
+						<td class="name">Radio Buttons</td>
+						<td>
+							<input type="radio"  name="radio" id="radio1" value="1"/><label for="radio1">One</label>  <br>
+							<input type="radio"  name="radio" id="radio2" value="2"/><label for="radio2">Two</label>  <br>
+							<input type="radio"  name="radio" id="radio3" value="3"/> <label for="radio3">Three</label>
+						</td>
+					</tr>
+					<tr>
+						<td class="name">Select Lists</td>
+						<td>
+							<select name="sel">
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>	
+						</td>
+					</tr>
+					<tr>
+						<td class="name">Text Areas</td>
+						<td>
+							<textarea name="txtarea" rows="10" cols="40"></textarea>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<button onclick="save(); return false">Save</button>
+				<button onclick="restore(); return false">Restore</button>
+				<button onclick="clearFields(); return false">Clear</button>
+			</fieldset>
+		</form>
+	</body>
+</html>
